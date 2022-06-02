@@ -33,3 +33,54 @@ public/index.html: this file contains one div element in which a id is stored wh
 src/index.js : In this file you will render your complete React application at the id given in index.html file.
 
 src/App.js : From this file ,developers can start building their React application
+
+Babel: It is a transcompiler. Firstly, It converts the JSX into JS and then it converts ES6 code to ES5 so that browser can understand.
+
+Webpack: It is a type of bundler. It takes all the HTML, CSS and JS code and reducves the size of bundle so that it can be loaded on the browser.
+
+Q: How many imports are there in React JS?
+Ans- default and named. How will import a component depends on how you have exported that.
+
+Q: How to create a state variable in class component?
+import React from "react"
+class App extends React.Component{
+state = {
+name: "Abhijeet"
+}
+render(){
+return(
+<div>Hello{this.state.name}</div>
+)
+}
+}
+export default App
+
+We can also write like this,
+import React, {Component} from "react";
+class App extends Component{
+}
+
+
+
+In React we have two types of components : class and funtional
+
+We are moving from class components to functional components in React because :
+
+    Class components have a proper structure like constructor and this keyword which is tricky to use , in case of fucntional component we dont have to follow any such structure.
+    Since JS is a functional programming language , so classes are not that much preferred
+    Functional component is faster in execution compared to class
+
+This application contains the introduction and code to understand the Hooks got introduced in React 16.8 version .
+
+   1. useState = User.js
+   2. useEffect = User.js
+   3. useContext = Students.js and context.js
+   4. useReducer = CompReducer.js
+   5. useRef = CompReducer.js
+   6. useMemo = Memo&Callback folder
+   7. useCallback = Memo&Callback folder
+
+Other than hooks, it contains the introduction of how to setup context API in React project
+
+This also contains a little explanation about Login authentication and authorization , means how to pass the JWT token in the API and also contains one socket folder explaining how to make socket connection from front-end .
+
